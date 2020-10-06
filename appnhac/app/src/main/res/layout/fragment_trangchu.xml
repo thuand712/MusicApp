@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+scrollbars="none": khong hien thi thanh croll nhin xau
+fillViewport="true" : khi cac view dc dua vao dan deu de du hien thi
+-->
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:fillViewport="true">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        
+        <fragment
+            android:id="@+id/fragmentQuangCao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="ducthuan.com.appnhac.Fragment.QuangCaoFragment"/>
+        <fragment
+            android:name="ducthuan.com.appnhac.Fragment.PlayListFragment"
+            android:id="@+id/fragmentPlayList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <fragment
+            android:id="@+id/fragmentChuDeTheLoaiToday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="ducthuan.com.appnhac.Fragment.ChuDe_TheLoai_Today_Fragment"/>
+
+        <fragment
+            android:id="@+id/fragmentAlbumToday"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="ducthuan.com.appnhac.Fragment.Album_Today_Fragment"/>
+
+        <fragment
+            android:id="@+id/fragmentBaiHatHot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:name="ducthuan.com.appnhac.Fragment.BaiHatHot_Fragment"/>
+
+    </LinearLayout>
+</ScrollView>

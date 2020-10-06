@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbarLayoutSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3e3ee2">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarSearch"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"></androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvSearch"
+        android:layout_below="@id/appbarLayoutSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></androidx.recyclerview.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/txtKhongCoDuLieu"
+        android:visibility="gone"
+        android:text="Không có dữ liệu bài hát"
+        android:textColor="#E91E1E"
+        android:gravity="center"
+        android:layout_below="@id/rvSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="35sp"/>
+</RelativeLayout>

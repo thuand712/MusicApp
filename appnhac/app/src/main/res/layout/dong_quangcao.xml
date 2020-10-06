@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:scaleType="fitXY"
+        android:id="@+id/imgBGQuangCao"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+    //pha mau trang den
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/custom_bgquangcao"/>
+    <RelativeLayout
+        android:id="@+id/relative1"
+        android:layout_alignBottom="@id/imgBGQuangCao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/imgBaiHatQuangCao"
+            android:padding="2dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+        <TextView
+            android:text="Hong nhan"
+            android:textSize="17sp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:id="@+id/txtTitleQuangCaoBaiHat"
+            android:layout_alignTop="@id/imgBaiHatQuangCao"
+            android:layout_toRightOf="@id/imgBaiHatQuangCao"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/imgBaiHatQuangCao"
+            android:layout_below="@id/txtTitleQuangCaoBaiHat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtNoiDungQuangCao"
+                android:text="Chao ban den voi ca khuc moi cua ca si hot nhat hien nay"
+                android:maxLines="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="#ffffff"
+                android:layout_marginRight="40dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
